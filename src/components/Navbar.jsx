@@ -14,7 +14,7 @@ function Navbar() {
 
             if(top >= offset && top < offset + height) {
                 navLinks.forEach(links => {
-                    links.classList.remove('active')
+                    links.classList.remove('active') 
                     document.querySelector('header nav a[href*='+ id + ']').classList.add('active')
                 })
             }
@@ -70,22 +70,22 @@ function Navbar() {
             <nav className='absolute lg:hidden w-screen mini:w-[75%] petite:w-[55%] md:w-[47%] sm:w-[50%] right-0 overflow-y-hidden top-[3rem] max-h-[60vh] pl-[2rem] bg-white text-[18px] moving-nav border-green-600 border' style={display}>
                 <ul className='mt-[2.4rem] flex-col flex gap-3'> 
                     <li>
-                        <a onClick={() => setShowMenu(false)} className='hover:text-green-600 hover:border-b-2 border-green-800 w-[3rem]' href="#intro">Home</a>
+                        <a onClick={() => setShowMenu(false)} href="#intro" className='hover:text-green-600'>Home</a>
                     </li>
                     <li>
-                        <a onClick={() => setShowMenu(false)} className='hover:text-green-600 hover:border-b-2 border-green-800 w-[4rem]' href="#services">Services</a>
+                        <a onClick={() => setShowMenu(false)} href="#services"  className='hover:text-green-600'>Services</a>
                     </li>
                     <li>
-                        <a onClick={() => setShowMenu(false)} className='hover:text-green-600 hover:border-b-2 border-green-800 w-[4rem]' href="#products">Products</a>
+                        <a onClick={() => setShowMenu(false)} href="#products"  className='hover:text-green-600'>Products</a>
                     </li>
                     <li>
-                        <a onClick={() => setShowMenu(false)} className='hover:text-green-600 hover:border-b-2 border-green-800 w-[6rem]' href="#appointment">Appointment</a>
+                        <a onClick={() => setShowMenu(false)} href="#appointment"  className='hover:text-green-600'>Appointment</a>
                     </li>
                     <li>
-                        <a onClick={() => setShowMenu(false)} className='hover:text-green-600 hover:border-b-2 border-green-800 w-[4rem]' href="#testimonials">Reviews</a>
+                        <a onClick={() => setShowMenu(false)} href="#testimonials"  className='hover:text-green-600'>Reviews</a>
                     </li>
                     <li>
-                        <a onClick={() => setShowMenu(false)} className='hover:text-green-600 hover:border-b-2 border-green-800 w-[4rem]' href="#contact">Contact</a>
+                        <a onClick={() => setShowMenu(false)} href="#contact"  className='hover:text-green-600'>Contact</a>
                     </li>
                 </ul>
             </nav>
