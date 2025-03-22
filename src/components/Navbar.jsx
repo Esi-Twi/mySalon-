@@ -67,7 +67,7 @@ function Navbar() {
             {/* mobile navbar */}
             <img onClick={moveNav} className='lg:hidden w-4 cursor-pointer' src={assets.barsSolid}/>
 
-            <nav className='absolute lg:hidden w-[90%] mini:w-[75%] petite:w-[55%] md:w-[47%] sm:w-[50%] right-0 overflow-y-hidden top-[3rem] max-h-[60vh] pl-[5rem] bg-white text-[18px] moving-nav border-green-600 border' style={display}>
+            <nav className='absolute lg:hidden w-screen mini:w-[75%] petite:w-[55%] md:w-[47%] sm:w-[50%] right-0 overflow-y-hidden top-[3rem] max-h-[60vh] pl-[2rem] bg-white text-[18px] moving-nav border-green-600 border' style={display}>
                 <ul className='mt-[2.4rem] flex-col flex gap-3'> 
                     <li>
                         <a onClick={() => setShowMenu(false)} className='hover:text-green-600 hover:border-b-2 border-green-800 w-[3rem]' href="#intro">Home</a>

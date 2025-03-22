@@ -1,7 +1,7 @@
 
 function Services() {
     return(
-        <section id='services' className="h-[100vh] petite:h-[80vh] flex items-center justify-center flex-col">
+        <section id='services' className="h-[80vh] flex items-center justify-center flex-col">
             <h1 className="text-3xl font-bold mb-[1rem] petite:mb-[2rem]">Our <span className="underline text-green-600">Services</span></h1>
             <div className="flex justify-center gap-[2rem] petite:gap-[20%] w-[90%] flex-col petite:flex-row">
                 <div>

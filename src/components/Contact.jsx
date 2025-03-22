@@ -38,22 +38,22 @@ function Contact() {
     }
 
     return(
-        <section id='contact' className="flex items-center h-[80vh] justify-center flex-col">
-            <h1 className="font-bold text-2xl mini:text-3xl">Contact <span className="underline text-green-600">Us</span></h1>
-            <p className="text-gray-700 mb-3 text-sm text-center mini:text-base">Send us an email and be rest assured we will responsed</p>
+        <section id='contact' className="flex items-center h-[70vh] justify-center flex-col">
+            <h1 className="font-bold text-[25px] mini:text-3xl">Contact <span className="underline text-green-600">Us</span></h1>
+            <p className="text-gray-700 w-11/12 mb-3 text-sm text-center mini:text-base">Send us an email and be rest assured we will responsed</p>
 
-            <form onSubmit={submitForm} autoComplete="off" className="mt-[2rem] max-w-[80vw] flex items-center justify-center gap-3 flex-col">
-                <input className="border md:w-[22rem] w-[14rem] mini:w-[20rem] rounded border-black py-1 px-2" placeholder="Name"
+            <form onSubmit={submitForm} autoComplete="off" className="mt-[2rem] w-[90vw] mini:max-w-[80vw] flex items-center justify-center gap-3 flex-col">
+                <input className="border md:w-[22rem] w-[90%] mini:w-[20rem] rounded border-black py-1 px-2" placeholder="Name"
                       onChange={addContactInfo}
                       name='name'
                       value={contactData.name}/>
 
-                <input className="border md:w-[22rem] w-[14rem] mini:w-[20rem] rounded border-black py-1 px-2" placeholder="Phone Number"
+                <input className="border md:w-[22rem] w-[90%] mini:w-[20rem] rounded border-black py-1 px-2" placeholder="Phone Number"
                       onChange={addContactInfo}
                       name='contact'
                       value={contactData.contact}/>
 
-                <textarea rows='4' className="border resize-none md:w-[25rem] w-[17rem] mini:w-[23rem] rounded border-black py-1 px-2" 
+                <textarea rows='4' className="border resize-none md:w-[25rem] w-[100%] mini:w-[23rem] rounded border-black py-1 px-2" 
                     placeholder="Please leave your message here"
                     onChange={addContactInfo}
                     name='message'

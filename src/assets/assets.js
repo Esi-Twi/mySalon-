@@ -12,10 +12,12 @@ import hairstyle5 from './hairstyle5.png'
 import instagram from './instagram.svg'
 import tiktok from './tiktok.svg'
 import arrow from './arrow.png'
+import email from './email.png'
+import phone from './phone-call.png'
 
 
 export const assets = {
-    barsSolid, braidedGirl, design12, facebook, hairstyle0, hairstyle1, hairstyle2, hairstyle3, hairstyle4, hairstyle5, instagram, tiktok, logo, arrow
+    barsSolid, braidedGirl, design12, facebook, hairstyle0, hairstyle1, hairstyle2, hairstyle3, hairstyle4, hairstyle5, instagram, tiktok, logo, arrow, email, phone
 }
 
 export const reviewInfo = [

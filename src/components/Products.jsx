@@ -2,9 +2,9 @@ import { assets } from "../assets/assets";
 
 function Products() {
     return(
-        <section id='products' className="products purple h-[130vh] sm:h-[130vh] sm:text-black pl-[4.5%] sm:pr-[5%] relative sm:bg-none sm:items-end flex items-start petite:pl-[8%] justify-center flex-col petite:h-[110vh] text-white md:pr-[20%] lg:pr-[30%]">
+        <section id='products' className="products purple h-[110vh] sm:h-[109vh] sm:text-black pl-[4.5%] sm:pr-[5%] relative sm:bg-none sm:items-end flex items-start petite:pl-[8%] justify-center flex-col text-white md:pr-[20%] lg:pr-[30%]">
 
-            <h1 className="font-bold z-10 text-[22px] petite:text-2xl w-[100%] sm:w-[60%] text-center font-mono text-yellow-500">Check out our amazing hair products</h1>
+            <h1 className="font-bold z-10 text-[18px] petite:text-2xl w-[100%] sm:w-[60%] text-center font-mono text-yellow-500">Check out our amazing hair products</h1>
             <div className="z-10 mt-6 flex flex-col gap-4 mb-6">
                 <div >
                     <p className="text-xl font-bold sm:text-white text-green-800">Hair growth products</p>
@@ -39,11 +39,15 @@ function Products() {
                     </ul>
                 </div>
             </div>
+                
 
-            <div className="flex gap-3 mt-4 z-10">
-                <a href="#contact" className="bg-yellow-400 transition-all hover:text-yellow-400 hover:bg-white hover:border-yellow-400 border-2 border-[purple] rounded py-1 px-5">Contact Us</a>
-                <p className="text-gray-300 text-lg">and get your now!!</p>
-            </div>
+            <p className="text-gray-300 text-lg z-10">
+                <a href="#contact" className="bg-yellow-400 transition-all hover:text-yellow-400
+                 hover:bg-white text-black hover:border-yellow-400 border-2 border-[purple] rounded py-1 px-3 mr-3">
+                    Contact Us</a>
+                    and get yours now!!
+            </p>
+
             <img src={assets.braidedGirl} className="hidden sm:flex h-full absolute left-0 top-0 lg:w-[40%] md:w-[50%] w-[70%] "/>
         </section>
     )

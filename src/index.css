@@ -20,6 +20,8 @@ body {
 
 .intro {
     background: linear-gradient(rgba(0, 0, 0,0.8),rgba(0, 0, 0,0.5)), url('./assets/hairstyle0.png');
+    background-size: cover;
+    background-repeat:no-repeat;
 }
 
 .intro-transition {
@@ -40,6 +42,8 @@ body {
 
 .products {
     background: linear-gradient(rgba(0, 0, 0,0.8),rgba(0, 0, 0,0.5)), url('./assets/braided-girl.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
 }
 
 .purple {

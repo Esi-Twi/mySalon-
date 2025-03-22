@@ -43,27 +43,29 @@ function Appointment() {
 
     return(
         <section id='appointment' className="h-[100vh] flex flex-col items-center petite:w-auto justify-center">
-            <h1 className="font-bold text-[25px] petite:text-3xl">Book an <span className="underline text-green-600">Appointment</span></h1>
+
+            <h1 className="font-bold text-[22px] petite:text-3xl">Book an <span className="underline text-green-600">Appointment</span></h1>
             <p className="text-gray-600 text-base">Get your hair down with us</p>
 
-            <form onSubmit={submit} autoComplete="off" className="w-[90%] micro:w-[65vw] md:w-[45vw] lg:w-[35%] mt-10">
-                <input className="w-[14rem] petite:w-[17rem] md:w-[19rem] border-b-2 border-green-600 px-3 py-1 text-base" placeholder="Name"
+            <form onSubmit={submit} autoComplete="off" className="w-[85%] ml-[4%] micro:w-[65vw] md:w-[45vw] lg:w-[35%] mt-10">
+                <input className="w-[87%] petite:w-[17rem] md:w-[19rem] border-b-2 border-green-600 px-3 py-1 text-base" placeholder="Name"
                            onChange={getData}
                            name='name'
                            value={appointmentData.name}/>
 
-                <input className="w-[14rem] petite:w-[17rem] md:w-[19rem] border-b-2 my-3 border-green-600 px-3 py-1 text-base"  placeholder="Telephone Number"
+                <input className="w-[87%] petite:w-[17rem] md:w-[19rem] border-b-2 my-3 border-green-600 px-3 py-1 text-base"  placeholder="Telephone Number"
                                  onChange={getData}
                                  name='number'
                                  value={appointmentData.number}/>
 
-                <input className="w-[14rem] petite:w-[17rem] md:w-[19rem] border-b-2 mb-3 border-green-600 px-3 py-1 text-base" placeholder="Address"
+                <input className="w-[87%] petite:w-[17rem] md:w-[19rem] border-b-2 mb-3 border-green-600 px-3 py-1 text-base" placeholder="Address"
                                 onChange={getData}
                                 name='address'
                                 value={appointmentData.address}/>
 
-                <p>Choose a date range for your appointment</p>
-                <div className="flex">
+                <p className="mt-4 mb-2">Choose a date range for your appointment</p>
+
+                <div className="flex flex-col mini:flex-row gap-3">
                     <input className="border w-[8.3rem] petite:w-[10rem] rounded mr-2 petite:mr-4 border-black px-3 py-1 text-base" type='date'
                     onChange={getData}
                     name='startDate'
@@ -74,7 +76,8 @@ function Appointment() {
                     name='endDate'
                     value={appointmentData.endDate}/>
                 </div>
-                <textarea rows='4' className="w-[16rem] mini:w-[20rem] petite:w-[22rem] md:w-[28rem] mt-4 border resize-none border-black rounded px-3 py-1 text-base"  placeholder="Add your message"
+
+                <textarea rows='4' className="w-[100%] petite:w-[22rem] md:w-[28rem] mt-4 border resize-none border-black rounded px-3 py-1 text-base"  placeholder="Add your message"
                     onChange={getData}
                     name='message'
                     value={appointmentData.message}/>
